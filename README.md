@@ -25,6 +25,15 @@ Binary Classification
 
 ---
 
+---
+
+## Github Repository link
+
+https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML/edit/main
+
+---
+
+
 ## Models Used
 
 1. Logistic Regression
