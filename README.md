@@ -69,13 +69,7 @@ model/
 
 ## Model Comparison Table
 
-| Model | Accuracy | AUC | Precision | Recall | F1 | MCC |
-|---------|---------|---------|---------|---------|---------|---------|
-| Logistic Regression | | | | | | |
-| Decision Tree | | | | | | |
-| KNN | | | | | | |
-| Naive Bayes | | | | | | |
-| SVM | | | | | | |
+Refer model_metrics.csv
 
 ---
 
