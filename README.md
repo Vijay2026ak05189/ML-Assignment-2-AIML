@@ -115,4 +115,3 @@ streamlit run app.py
 ## Author
 
 Vijayabhaskar Reddy
-BITS Pilani WILP
