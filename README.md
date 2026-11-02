@@ -99,7 +99,8 @@ model/
 
 ## Streamlit Application Link
 
-Add your Streamlit Cloud URL here after deployment.
+Streamlit app Link:
+https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML
 
 ---
 
