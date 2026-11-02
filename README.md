@@ -81,8 +81,7 @@ model/
 
 | Model | Observation |
 |---------|---------|
-Logistic Regression  Achieved moderate Accuracy (74.56%) and the highest Precision (94.48%) among all models. It is effective at minimizing false positives but missed several positive cases, resulting in lower Recall and Accuracy.
-
+|Logistic Regression|Achieved moderate Accuracy (74.56%) and the highest Precision (94.48%) among all models. It is effective at minimizing false positives but missed several positive cases, resulting in lower Recall and Accuracy.  
 ---
 
 ## Streamlit Application Link
