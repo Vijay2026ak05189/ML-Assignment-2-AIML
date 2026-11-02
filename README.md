@@ -29,7 +29,9 @@ Binary Classification
 
 ## Github Repository link
 
-https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML/edit/main
+Repository Link:
+https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML
+
 ---
 ## Repository Structure
 
