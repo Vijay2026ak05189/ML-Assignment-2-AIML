@@ -94,7 +94,7 @@ model/
 |KNN|	Achieved the highest Accuracy (95.01%), Recall (95.01%), and F1 Score (92.86%). Although its AUC and MCC values were relatively low, it provided the best overall prediction performance on this dataset.|
 |Naive Bayes|Produced balanced results with Accuracy (86.69%), AUC (80.18%), and F1 Score (89.33%). It demonstrated stable performance and good generalization but did not outperform KNN or Decision Tree.|
 |Support Vector Machine (SVM)|Achieved moderate Accuracy (76.13%) and high Precision (93.47%). While effective at reducing false positives, its Recall and F1 Score were lower than those of KNN and Decision Tree|
-|Overall, Winner|K-Nearest Neighbors (KNN) is the best-performing model for this Stroke Prediction dataset, achieving the highest Accuracy (95.01%), Recall (95.01%), and F1 Score (92.86%). Therefore, KNN was selected as the final model for deployment in the Streamlit application.also Accuracy alone is not sufficient for medical datasets.AUC, Recall and MCC should also be considered while
+|Overall, Winner|K-Nearest Neighbors (KNN) is the best-performing model for this Stroke Prediction dataset, achieving the highest Accuracy (95.01%), Recall (95.01%), and F1 Score (92.86%).Also Accuracy alone is not sufficient for medical datasets.AUC, Recall and MCC should also be considered while
 selecting the best model.|
 ---
 
