@@ -73,9 +73,6 @@ model/
 
 ## Model Comparison Table
 
-Refer model_metrics.csv from Github repository or below 
-
-
 ---
 
 ## Observations
