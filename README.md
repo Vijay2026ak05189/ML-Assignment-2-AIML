@@ -30,9 +30,25 @@ Binary Classification
 ## Github Repository link
 
 https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML/edit/main
-
 ---
+## Repository Structure
 
+```text
+README.md
+Stroke_Prediction_Train.ipynb
+app.py
+dataset.csv
+model_metrics.csv
+requirements.txt
+test_data.csv
+
+model/
+├── logistic_regression.pkl
+├── decision_tree.pkl
+├── knn.pkl
+├── naive_bayes.pkl
+├── svm.pkl
+```
 
 ## Models Used
 
@@ -52,27 +68,6 @@ https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML/edit/main
 - Recall
 - F1 Score
 - Matthews Correlation Coefficient (MCC)
-
----
-
-## Repository Structure
-
-```text
-README.md
-Stroke_Prediction_Train.ipynb
-app.py
-dataset.csv
-model_metrics.csv
-requirements.txt
-test_data.csv
-
-model/
-├── logistic_regression.pkl
-├── decision_tree.pkl
-├── knn.pkl
-├── naive_bayes.pkl
-├── svm.pkl
-```
 
 ---
 
