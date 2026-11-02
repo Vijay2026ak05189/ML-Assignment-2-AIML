@@ -122,9 +122,6 @@ if uploaded_file is not None:
             # Preprocessing
             # -------------------------
 
-            if "id" in data.columns:
-                data = data.drop("id", axis=1)
-
             if "bmi" in data.columns:
                 data["bmi"] = data["bmi"].fillna(
                     data["bmi"].median()
