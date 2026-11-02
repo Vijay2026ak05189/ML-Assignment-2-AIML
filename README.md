@@ -81,12 +81,12 @@ model/
 
 | Model | Observation |
 |---------|---------|
-| Logistic Regression | Good baseline performance and interpretability. |
-| Decision Tree | Easier to understand but may overfit. |
-| KNN | Sensitive to nearest neighbors and scaling. |
-| Naive Bayes | Fast and computationally efficient. |
-| SVM | Effective in handling complex decision boundaries. |
-| Overall Winner | Based on the highest Accuracy, AUC, F1 and MCC. |
+Logistic Regression	Achieved moderate Accuracy (74.56%) and the highest Precision (94.48%) among all models. It is effective at minimizing false positives but missed several positive cases, resulting in lower Recall and Accuracy.
+Decision Tree	Delivered strong Accuracy (93.35%) and Recall (93.35%), indicating good classification performance. However, its AUC score (54.77%) was the lowest, suggesting limited ability to distinguish between classes across different thresholds.
+KNN	Achieved the highest Accuracy (95.01%), Recall (95.01%), and F1 Score (92.86%). Although its AUC and MCC values were relatively low, it provided the best overall prediction performance on this dataset.
+Naive Bayes	Produced balanced results with Accuracy (86.69%), AUC (80.18%), and F1 Score (89.33%). It demonstrated stable performance and good generalization but did not outperform KNN or Decision Tree.
+Support Vector Machine (SVM)	Achieved moderate Accuracy (76.13%) and high Precision (93.47%). While effective at reducing false positives, its Recall and F1 Score were lower than those of KNN and Decision Tree.
+Overall, Winner for your dataset?	K-Nearest Neighbors (KNN) is the best-performing model for this Stroke Prediction dataset, achieving the highest Accuracy (95.01%), Recall (95.01%), and F1 Score (92.86%). Therefore, KNN was selected as the final model for deployment in the Streamlit application.
 
 ---
 
