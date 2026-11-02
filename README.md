@@ -100,7 +100,7 @@ model/
 ## Streamlit Application Link
 
 Streamlit app Link:
-https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML
+ https://vijay2026ak05189.streamlit.app/
 
 ---
 
