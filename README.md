@@ -53,6 +53,7 @@ README.md
 Stroke_Prediction_Train.ipynb
 app.py
 dataset.csv
+https://github.com/Vijay2026ak05189/ML-Assignment-2-AIML/tree/main
 requirements.txt
 test_data.csv
 
@@ -62,7 +63,6 @@ model/
 ├── knn.pkl
 ├── naive_bayes.pkl
 ├── svm.pkl
-└── model_metrics.csv
 ```
 
 ---
@@ -96,7 +96,7 @@ Add your Streamlit Cloud URL here after deployment.
 
 ### Run Training Notebook
 
-Open and execute:
+Open and execute all cells:
 
 ```text
 Stroke_Prediction_Train.ipynb
