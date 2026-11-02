@@ -107,6 +107,31 @@ if uploaded_file is not None:
 
         data = pd.read_csv(uploaded_file)
 
+        from sklearn.preprocessing import LabelEncoder
+
+        # Remove id column if present
+        if "id" in data.columns:
+            data = data.drop("id", axis=1)
+
+        # Handle missing BMI values
+        if "bmi" in data.columns:
+            data["bmi"] = data["bmi"].fillna(
+                data["bmi"].median()
+            )
+
+        # Encode categorical columns
+        for col in data.columns:
+
+        if col != "stroke":
+
+        if data[col].dtype == "object":
+
+            encoder = LabelEncoder()
+
+            data[col] = encoder.fit_transform(
+                data[col].astype(str)
+            )
+
         TARGET = "stroke"
 
         if TARGET not in data.columns:
