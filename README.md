@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-The objective of this project is to predict whether a patient is likely to suffer a stroke based on demographic and health-related information using Machine Learning classification algorithms.
+The objective of this assignment is to predict whether a patient is likely to suffer a stroke based on demographic and health-related information using Machine Learning classification algorithms.
 
 ---
 
