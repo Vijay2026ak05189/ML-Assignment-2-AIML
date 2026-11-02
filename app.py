@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from sklearn.preprocessing import LabelEncoder
 
 from sklearn.metrics import (
     accuracy_score,
@@ -107,31 +108,6 @@ if uploaded_file is not None:
 
         data = pd.read_csv(uploaded_file)
 
-        from sklearn.preprocessing import LabelEncoder
-
-        # Remove id column if present
-        if "id" in data.columns:
-            data = data.drop("id", axis=1)
-
-        # Handle missing BMI values
-        if "bmi" in data.columns:
-            data["bmi"] = data["bmi"].fillna(
-                data["bmi"].median()
-            )
-
-        # Encode categorical columns
-        for col in data.columns:
-
-        if col != "stroke":
-
-        if data[col].dtype == "object":
-
-            encoder = LabelEncoder()
-
-            data[col] = encoder.fit_transform(
-                data[col].astype(str)
-            )
-
         TARGET = "stroke"
 
         if TARGET not in data.columns:
@@ -142,12 +118,50 @@ if uploaded_file is not None:
 
         else:
 
+            # -------------------------
+            # Preprocessing
+            # -------------------------
+
+            if "id" in data.columns:
+                data = data.drop("id", axis=1)
+
+            if "bmi" in data.columns:
+                data["bmi"] = data["bmi"].fillna(
+                    data["bmi"].median()
+                )
+
+            categorical_columns = [
+                "gender",
+                "ever_married",
+                "work_type",
+                "Residence_type",
+                "smoking_status"
+            ]
+
+            for col in categorical_columns:
+
+                if col in data.columns:
+
+                    encoder = LabelEncoder()
+
+                    data[col] = encoder.fit_transform(
+                        data[col].astype(str)
+                    )
+
+            # -------------------------
+            # Features / Target
+            # -------------------------
+
             X = data.drop(
                 TARGET,
                 axis=1
             )
 
             y = data[TARGET]
+
+            # -------------------------
+            # Load Selected Model
+            # -------------------------
 
             model = joblib.load(
                 model_files[selected_model]
@@ -156,6 +170,7 @@ if uploaded_file is not None:
             predictions = model.predict(X)
 
             try:
+
                 probabilities = model.predict_proba(X)[:, 1]
 
                 auc = roc_auc_score(
@@ -164,6 +179,7 @@ if uploaded_file is not None:
                 )
 
             except Exception:
+
                 auc = 0
 
             accuracy = accuracy_score(
@@ -235,10 +251,6 @@ if uploaded_file is not None:
                 round(mcc, 4)
             )
 
-            # ------------------------
-            # Classification Report
-            # ------------------------
-
             st.subheader(
                 "Classification Report"
             )
@@ -250,10 +262,6 @@ if uploaded_file is not None:
             )
 
             st.text(report)
-
-            # ------------------------
-            # Confusion Matrix
-            # ------------------------
 
             st.subheader(
                 "Confusion Matrix"
@@ -276,7 +284,6 @@ if uploaded_file is not None:
         st.error(
             f"Error: {e}"
         )
-
 # ----------------------------------
 # Footer
 # ----------------------------------
