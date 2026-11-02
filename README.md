@@ -72,7 +72,11 @@ model/
 ---
 
 ## Model Comparison Table
-<img width="540" height="225" alt="image" src="https://github.com/user-attachments/assets/ad6a0aeb-1f77-4bcf-8042-61f9dd6d8876" />
+
+| ML Model Name| Accuracy | AUC | Precision | Recall | F1 | MCC|
+|---------|---------|------|------|------|------|-------|
+|Logistic Regression |	0.7456 | 	0.8364 |	0.9448 | 	0.7456 |	0.8175 |	0.2597 |
+
 
 
 ---
