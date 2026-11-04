@@ -24,6 +24,82 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+
+/* Main background */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #e3f2fd 0%,
+        #ffffff 50%,
+        #bbdefb 100%
+    );
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #0d47a1 !important;
+}
+
+/* Metric cards */
+div[data-testid="metric-container"] {
+    background-color: white;
+    border: 2px solid #90caf9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Dataframes */
+[data-testid="stDataFrame"] {
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/* Select box */
+[data-baseweb="select"] {
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px dashed #64b5f6;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #e1f5fe;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #1976d2;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.stButton > button:hover {
+    background-color: #1565c0;
+    color: white;
+}
+
+/* Classification report */
+pre {
+    background-color: white !important;
+    border-radius: 10px !important;
+    padding: 15px !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 st.title("Stroke Prediction - Machine Learning Dashboard")
 
 st.markdown("""
