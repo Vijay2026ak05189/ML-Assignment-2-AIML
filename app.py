@@ -150,7 +150,7 @@ st.subheader("Model Comparison Metrics")
 
 try:
     metrics_df = pd.read_csv("model_metrics.csv")
-    st.dataframe(metrics_df, use_container_width=True)
+    st.dataframe(metrics_df, width="stretch")
 
 except Exception as e:
     st.warning(
