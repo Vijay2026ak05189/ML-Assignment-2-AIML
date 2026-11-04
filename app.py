@@ -121,16 +121,6 @@ This application compares the performance of five machine learning models:
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-This application compares the performance of five machine learning models:
-
-- Logistic Regression
-- Decision Tree
-- KNN
-- Naive Bayes
-- Support Vector Machine (SVM)
-""")
-
 # ----------------------------------
 # Model File Paths
 # ----------------------------------
