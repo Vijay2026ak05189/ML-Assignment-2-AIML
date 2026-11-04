@@ -358,7 +358,7 @@ if uploaded_file is not None:
 
             st.dataframe(
                 cm_df,
-                use_container_width=True
+                width="stretch"
             )
 
     except Exception as e:
