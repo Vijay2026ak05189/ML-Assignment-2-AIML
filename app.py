@@ -27,80 +27,99 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* Main background */
+/* Main Background */
 .stApp {
     background: linear-gradient(
         135deg,
-        #e3f2fd 0%,
-        #ffffff 50%,
-        #bbdefb 100%
+        #f8fbff 0%,
+        #eef6ff 50%,
+        #dceeff 100%
     );
 }
 
-/* Headers */
-h1, h2, h3 {
+/* Title */
+h1 {
     color: #0d47a1 !important;
+    text-align: center;
+    font-size: 42px !important;
 }
 
-/* Metric cards */
+/* Sub Headers */
+h2,h3 {
+    color: #1565c0 !important;
+}
+
+/* Metrics Cards */
 div[data-testid="metric-container"] {
-    background-color: white;
-    border: 2px solid #90caf9;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 6px solid #1976d2;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Dataframes */
+/* DataFrames */
 [data-testid="stDataFrame"] {
     background-color: white;
-    border-radius: 10px;
-    padding: 8px;
+    border-radius: 12px;
+    padding: 10px;
 }
 
-/* Select box */
-[data-baseweb="select"] {
-    background-color: white;
-    border-radius: 8px;
-}
-
-/* File uploader */
+/* Uploader */
 [data-testid="stFileUploader"] {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-    border: 2px dashed #64b5f6;
+    border: 2px dashed #2196f3;
 }
 
-/* Sidebar */
-section[data-testid="stSidebar"] {
-    background-color: #e1f5fe;
-}
-
-/* Buttons */
-.stButton > button {
-    background-color: #1976d2;
-    color: white;
+/* Dropdown */
+[data-baseweb="select"] {
+    background-color: white;
     border-radius: 10px;
-    border: none;
 }
 
-.stButton > button:hover {
-    background-color: #1565c0;
-    color: white;
-}
-
-/* Classification report */
+/* Classification Report */
 pre {
-    background-color: white !important;
-    border-radius: 10px !important;
-    padding: 15px !important;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #1976d2;
+}
+
+/* Footer */
+footer {
+    visibility: hidden;
 }
 
 </style>
 """, unsafe_allow_html=True)
 
-st.title("Stroke Prediction - Machine Learning Dashboard")
+st.markdown("""
+<h1>
+🩺 Stroke Prediction Dashboard
+</h1>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div style="
+background-color:white;
+padding:15px;
+border-radius:10px;
+border-left:6px solid #1976d2;
+margin-bottom:20px;">
+
+This application compares the performance of five machine learning models:
+<ul>
+<li>Logistic Regression</li>
+<li>Decision Tree</li>
+<li>KNN</li>
+<li>Naive Bayes</li>
+<li>Support Vector Machine (SVM)</li>
+</ul>
+
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 This application compares the performance of five machine learning models:
